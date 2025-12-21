@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>senote | 日常と音楽をつなぐツール</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@300&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./common/css/style.css">
+</head>
+<body>
+  <header class="border-bottom sticky-top bg-blur">
+    <nav class="navbar navbar-expand-lg container py-3">
+      <a class="navbar-brand fw-semibold text-accent" href="./">senote</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="#services">サービス</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact.html">コンタクト</a></li>
+          <li class="nav-item"><a class="nav-link" href="./privacy.html">プライバシー</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about.html">運営者</a></li>
+          <li class="nav-item ms-lg-3">
+            <div class="btn-group" role="group" aria-label="Language switch">
+              <a class="btn btn-sm btn-outline-light active" aria-current="page" href="../ja/">Ja</a>
+              <a class="btn btn-sm btn-outline-light" href="../en/">En</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div id="cookie-banner" class="cookie-banner">
+    <h2>Cookieの利用について</h2>
+    <p>当サイトでは解析や広告のためにCookieを使用します。同意すると Google Analytics（GA4）が有効になります。詳細は<a class="link-light" href="./privacy.html">プライバシーポリシー</a>をご確認ください。</p>
+    <div class="cookie-actions">
+      <button class="btn btn-primary" id="cookie-accept" type="button">同意する</button>
+      <button class="btn btn-outline-light" id="cookie-reject" type="button">拒否する</button>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero-section text-white">
+      <div class="container py-5">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <p class="badge rounded-pill bg-primary-subtle text-primary-emphasis px-3 py-2 mb-3">音楽・日常に役立つツールとアプリ</p>
+            <h1 class="display-6 fw-bold mb-3">日常と音楽をつなぐ、<br>シンプルで頼れるプロダクト。</h1>
+            <p class="lead text-white-50 mb-4">メモも、楽譜も、練習も。senoteは日々の「やりたい」を軽くするツールをつくっています。</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a class="btn btn-lg btn-accent px-4" href="#services">サービスを見る</a>
+              <a class="btn btn-lg btn-outline-light px-4" href="./contact.html">お問い合わせ</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-panel shadow-lg">
+              <div class="row g-3">
+                <div class="col-12">
+                  <div class="feature-card p-3 gradient-card h-100">
+                    <div class="d-flex justify-content-between align-items-start">
+                      <div>
+                        <p class="small text-white-50 mb-1">iPhoneアプリ</p>
+                        <h3 class="h5 mb-2">Pictmemo</h3>
+                        <p class="small text-white-50 mb-0">素早い起動で撮ってすぐメモ。写真はアプリ内に保存し、ライブラリを汚さない。</p>
+                      </div>
+                      <img class="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/da/db/2c/dadb2c30-411b-0d7c-01d3-662388217622/AppIcon-0-0-1x_U007emarketing-0-5-85-220.png/200x200bb.jpg" alt="Pictmemo icon">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="feature-card p-3 h-100 bg-surface">
+                    <p class="small text-muted mb-1">Macアプリ</p>
+                    <h3 class="h6 mb-2">Sheet Music PDF Viewer</h3>
+                    <p class="small text-muted mb-0">楽譜PDFを複数ページで表示。Appleシリコン対応。</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="feature-card p-3 h-100 bg-surface">
+                    <p class="small text-muted mb-1">Webツール集</p>
+                    <h3 class="h6 mb-2">MusicTools</h3>
+                    <p class="small text-muted mb-0">ウクレレ・ベース・ギター向けの指板/音名ツール。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="py-5 anchor-offset">
+      <div class="container">
+        <div class="row align-items-center mb-4">
+          <div class="col-lg-8">
+            <p class="text-accent fw-semibold mb-2">SERVICES</p>
+            <h2 class="fw-bold">プロダクト一覧</h2>
+            <p class="text-muted mb-0">日常メモ、楽譜閲覧、練習支援の3ラインナップ。外部サイトやApp Storeへ直接リンクしています。</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm service-card">
+              <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/da/db/2c/dadb2c30-411b-0d7c-01d3-662388217622/AppIcon-0-0-1x_U007emarketing-0-5-85-220.png/600x600bb.jpg" class="card-img-top object-fit-cover" alt="Pictmemo">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5">Pictmemo（iPhone）</h3>
+                <p class="text-muted small mb-3">真四角の写真を撮ってメモとして保存。素早い起動とシンプル操作で、レシートや看板をアプリ内に保管し、写真ライブラリをきれいに保ちます。</p>
+                <a class="btn btn-outline-primary mt-auto" href="https://apps.apple.com/jp/app/%E3%83%94%E3%82%AF%E3%83%88%E3%83%A1%E3%83%A2-%E5%86%99%E7%9C%9F%E3%81%A7%E3%83%A1%E3%83%A2%E3%81%99%E3%82%8B%E3%82%AB%E3%83%A1%E3%83%A9/id641415936" target="_blank" rel="noopener">App Storeで見る</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm service-card">
+              <img src="https://sheetmusicviewer.senote.com/img/fig.png" class="card-img-top object-fit-cover" alt="Sheet Music PDF Viewer">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5">Sheet Music PDF Viewer（Mac）</h3>
+                <p class="text-muted small mb-3">楽譜PDFをMacで快適に閲覧。複数ページ同時表示、ショートカット操作、Appleシリコン対応で演奏環境をシンプルに整えます。</p>
+                <a class="btn btn-outline-primary mt-auto" href="https://sheetmusicviewer.senote.com/" target="_blank" rel="noopener">公式サイト</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm service-card">
+              <div class="card-img-top gradient-placeholder d-flex align-items-center justify-content-center text-white">
+                <div>
+                  <div class="small text-white-50">Web Tools</div>
+                  <div class="h5 mb-0">MusicTools by senote</div>
+                </div>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5">MusicTools by senote（Web）</h3>
+                <p class="text-muted small mb-3">ウクレレ・ベース・ギター向けの無料ブラウザツール集。指板やコードの確認をスムーズにし、練習や作曲をサポートします。</p>
+                <a class="btn btn-outline-primary mt-auto" href="https://musictools.senote.com/ja/" target="_blank" rel="noopener">サイトへ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <p class="text-accent fw-semibold mb-2">CONTACT</p>
+            <h2 class="fw-bold mb-3">ご相談・ご連絡はこちらから</h2>
+            <p class="text-muted mb-4">アプリやツールに関するお問い合わせ、取材・コラボレーションのご相談など、お気軽にお寄せください。</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a class="btn btn-outline-primary px-4" href="https://docs.google.com/forms/d/e/1FAIpQLSfJ40IyVHMwu10iv-C4mvOFbOS6aDS4bXT5FdeYZJlGVv1GSw/viewform" target="_blank" rel="noopener">Googleフォームを開く</a>
+              <a class="btn btn-outline-secondary px-4" href="./privacy.html">プライバシーポリシー</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-4 border-top">
+    <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-2">
+      <div class="text-muted small">© <span id="year"></span> senote</div>
+      <div class="d-flex gap-3 small">
+        <a class="link-secondary text-decoration-none" href="./privacy.html">プライバシー</a>
+        <a class="link-secondary text-decoration-none" href="./about.html">運営者</a>
+        <a class="link-secondary text-decoration-none" href="../en/">English</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./common/script/main.js"></script>
+</body>
+</html>

@@ -5,7 +5,7 @@
   }
 
   const CONSENT_KEY = "senote_cookie_consent";
-  const GA_ID = window.GA_MEASUREMENT_ID || null; // 後で設定予定
+  const GA_ID = window.GA_MEASUREMENT_ID || "G-NXDQ4XCE4H";
 
   const injectGA = () => {
     if (!GA_ID) return;
